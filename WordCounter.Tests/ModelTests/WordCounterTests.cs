@@ -25,5 +25,17 @@ namespace WordCounter.Models
       //Assert
       Assert.AreEqual(testWord,result);
     }
+
+    [TestMethod]
+    public void Properties_CheckPropertySentence_string()
+    {
+      //Arrange
+      string testSentence = "Sentence";
+      WordCounter testWordCounter =new WordCounter("Word","Sentence");
+      //Act
+      string result = testWordCounter.GetSentence();
+      //Assert
+      Assert.AreEqual(testSentence,result);
+    }
   }
 }
