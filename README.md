@@ -9,17 +9,17 @@
 _Write a program that gathers both a word and sentence from a user, then checks how frequently the word appears in the sentence. It should check for full word matches only. (For instance, if provided the word "cat" and sentence "I'm walking to the cathedral." the first three letters of the word cathedral would not be counted.) Also, do not use regular expressions in your logic._
 
 ## Specs
-1. Get single letter as user input to check.Check if the user has entered the same letter and count if so.
-
-              Sample Input - a
-              Sample match provided by the user - a
-              Number of occurance - 1
-
-2. Convert the userinput and the sentence to lowercase.
+1. Convert the userinput and the sentence to lowercase.
 
               Sample Input - A
               Sample match provided by the user - a
               Expected output - a
+
+2. Get single letter as user input to check.Check if the user has entered the same letter and count if so.
+
+              Sample Input - a
+              Sample match provided by the user - a
+              Number of occurance - 1
 
 3. Get single letter as user input to check. count the number of times the single letter occurs in the sentence.
 
