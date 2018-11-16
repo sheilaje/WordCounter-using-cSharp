@@ -1,6 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using WordCounter.Models;
 //using System.Collections.Generic;
 
 namespace WordCounter.Models
@@ -9,29 +8,22 @@ namespace WordCounter.Models
   public class WordCounterTest
   {
     [TestMethod]
-    public void WordCounterConstructor_CreatesInstanceOfWordCounter_WordCounter()
+    public void WordCounterConstructor_CreatesInstanceOfWordCounter_Type()
     {
-      WordCounter testWordCounter = new WordCounter("test");
+      WordCounter testWordCounter = new WordCounter("word","sentence");
       Assert.AreEqual(typeof(WordCounter), testWordCounter.GetType());
+    }
+
+    [TestMethod]
+    public void Properties_CheckPropertyWord_string()
+    {
+      //Arrange
+      string testWord = "Word";
+      WordCounter testWordCounter =new WordCounter("Word","Sentence");
+      //Act
+      string result = testWordCounter.GetWord();
+      //Assert
+      Assert.AreEqual(testWord,result);
     }
   }
 }
-
-// using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using ToDoList.Models;
-//
-// namespace ToDoList.Tests
-// {
-//   [TestClass]
-//   public class ItemTest
-//   {
-//
-//     [TestMethod]
-//     public void ItemConstructor_CreatesInstanceOfItem_Item()
-//     {
-//       WC testWordCounter = new WC();
-//       Assert.AreEqual(typeof(WC), testWordCounter.GetType());
-//     }
-//
-//   }
-// }
