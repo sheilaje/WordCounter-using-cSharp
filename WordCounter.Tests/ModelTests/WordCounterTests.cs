@@ -61,5 +61,18 @@ namespace WordCounter.Models
       //Assert
       Assert.AreEqual("i love oregon", result);
     }
+
+    [TestMethod]
+    public void CheckForSingleLetterMatch_CheckIfUserWordOccursInUserSentence_Count()
+    {
+      //Arrange
+      // string testWord = "a";
+      // string testSentence = "a";
+      WordCounter testWordCounter = new WordCounter("a","a");
+      //Act
+      string result = testWordCounter.CheckMatch();
+      //Assert
+      Assert.AreEqual("1",result);
+    }
   }
 }
