@@ -37,5 +37,18 @@ namespace WordCounter.Models
       //Assert
       Assert.AreEqual(testSentence,result);
     }
+
+    [TestMethod]
+    public void WordConvertToLower_ConvertInputStringsToLowerCase_LowerCaseString()
+    {
+      //Arrange
+      string testWord = "I";
+      //string testSentence = "I LovE OregOn"
+      WordCounter testWordCounter = new WordCounter(testWord,"Sentence");
+      //Act
+      string result = testWordCounter.WordConvertToLower();
+      //Assert
+      Assert.AreEqual("i", result);
+    }
   }
 }
