@@ -63,16 +63,37 @@ namespace WordCounter.Models
     }
 
     [TestMethod]
-    public void CheckForSingleLetterMatch_CheckIfUserWordOccursInUserSentence_Count()
+    public void CheckMatch_CheckForSingleLetterMatch_Count()
     {
       //Arrange
-      // string testWord = "a";
-      // string testSentence = "a";
       WordCounter testWordCounter = new WordCounter("a","a");
       //Act
-      string result = testWordCounter.CheckMatch();
+      int result = testWordCounter.CheckMatch();
       //Assert
-      Assert.AreEqual("1",result);
+      Assert.AreEqual(1,result);
     }
+
+    [TestMethod]
+    public void CheckMatch_CheckForSingleLetterMultipleMatch_Count()
+    {
+      //Arrange
+      WordCounter testWordCounter = new WordCounter("a","a b a c g");
+      //Act
+      int result = testWordCounter.CheckMatch();
+      //Assert
+      Assert.AreEqual(2,result);
+    }
+
+    [TestMethod]
+    public void CheckMatch_CheckForWordsMatch_Count()
+    {
+      //Arrange
+      WordCounter testWordCounter = new WordCounter("love","I love Oregon");
+      //Act
+      int result = testWordCounter.CheckMatch();
+      //Assert
+      Assert.AreEqual(1,result);
+    }
+
   }
 }

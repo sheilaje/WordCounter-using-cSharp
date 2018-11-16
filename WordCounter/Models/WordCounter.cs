@@ -34,15 +34,32 @@ namespace WordCounter.Models
       return this._sentence.ToLower();
     }
 
-    public string CheckMatch()
+    // public string CheckMatch()
+    // {
+    //   if(this._sentence.Contains(this._word) == true)
+    //   {
+    //     return "1";
+    //   } else
+    //   {
+    //   return "0";
+    // }
+    // }
+    public int CheckMatch()
     {
-      if(this._sentence.Contains(this._word) == true)
+      string[] splitArray = this._sentence.Split(' ');
+      int count = 0;
+      foreach ( string word in splitArray)
       {
-        return "1";
-      } else
-      {
-      return "0";
-    }
+        if(this._sentence.Contains(this._word))
+        {
+          count = count + 1;
+        }
+        // else
+        // {
+        //   count = count + 0;
+        // }
+      }
+      return count;
     }
   }
 }
