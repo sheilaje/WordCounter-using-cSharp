@@ -1,5 +1,5 @@
 using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace WordCounter.Models
 {
@@ -44,13 +44,13 @@ namespace WordCounter.Models
     //   return "0";
     // }
     // }
-    public int CheckMatch()
+    public int CheckMatch(string word, string sentence)
     {
-      string[] splitArray = this._sentence.Split(' ');
+      string[] splitArray = sentence.Split(' ');
       int count = 0;
-      foreach ( string word in splitArray)
+      foreach ( string x in splitArray)
       {
-        if(this._sentence.Contains(this._word))
+        if(sentence.Contains(x))
         {
           count = count + 1;
         }
