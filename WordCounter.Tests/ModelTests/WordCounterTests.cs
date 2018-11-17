@@ -1,6 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-//using System.Collections.Generic;
 
 namespace WordCounter.Models
 {
@@ -68,7 +67,7 @@ namespace WordCounter.Models
       //Arrange
       WordCounter testWordCounter = new WordCounter("a","a");
       //Act
-      int result = testWordCounter.CheckMatch();
+      int result = testWordCounter.CheckMatch("a","a");
       //Assert
       Assert.AreEqual(1,result);
     }
@@ -79,7 +78,7 @@ namespace WordCounter.Models
       //Arrange
       WordCounter testWordCounter = new WordCounter("a","a b a c g");
       //Act
-      int result = testWordCounter.CheckMatch();
+      int result = testWordCounter.CheckMatch("a","a b a c g");
       //Assert
       Assert.AreEqual(2,result);
     }
@@ -90,10 +89,9 @@ namespace WordCounter.Models
       //Arrange
       WordCounter testWordCounter = new WordCounter("love","I love Oregon");
       //Act
-      int result = testWordCounter.CheckMatch();
+      int result = testWordCounter.CheckMatch("love","I love Oregon");
       //Assert
       Assert.AreEqual(1,result);
     }
-
   }
 }

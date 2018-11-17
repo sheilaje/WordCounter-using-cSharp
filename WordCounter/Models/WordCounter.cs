@@ -34,30 +34,20 @@ namespace WordCounter.Models
       return this._sentence.ToLower();
     }
 
-    // public string CheckMatch()
-    // {
-    //   if(this._sentence.Contains(this._word) == true)
-    //   {
-    //     return "1";
-    //   } else
-    //   {
-    //   return "0";
-    // }
-    // }
     public int CheckMatch(string word, string sentence)
     {
       string[] splitArray = sentence.Split(' ');
       int count = 0;
       foreach ( string x in splitArray)
       {
-        if(sentence.Contains(x))
+        if(x.Contains(word))
         {
           count = count + 1;
         }
-        // else
-        // {
-        //   count = count + 0;
-        // }
+        else
+        {
+          count = count + 0;
+        }
       }
       return count;
     }
