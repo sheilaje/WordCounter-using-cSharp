@@ -16,10 +16,8 @@ namespace WordCounter.Tests
     {
       //Arrange
       WordCounterController controller = new WordCounterController();
-
       //Act
       ActionResult newView = controller.New();
-
       //Assert
       Assert.IsInstanceOfType(newView, typeof(ViewResult));
     }

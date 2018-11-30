@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WordCounter;
 
 namespace WordCounter.Controllers
 {
