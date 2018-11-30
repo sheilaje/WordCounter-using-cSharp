@@ -67,7 +67,7 @@ namespace WordCounter.Models
       //Arrange
       WordCounter testWordCounter = new WordCounter("a","a");
       //Act
-      int result = testWordCounter.CheckMatch("a","a");
+      int result = testWordCounter.CheckMatch();
       //Assert
       Assert.AreEqual(1,result);
     }
@@ -78,7 +78,7 @@ namespace WordCounter.Models
       //Arrange
       WordCounter testWordCounter = new WordCounter("a","a b a c g");
       //Act
-      int result = testWordCounter.CheckMatch("a","a b a c g");
+      int result = testWordCounter.CheckMatch();
       //Assert
       Assert.AreEqual(2,result);
     }
@@ -89,7 +89,7 @@ namespace WordCounter.Models
       //Arrange
       WordCounter testWordCounter = new WordCounter("love","I love Oregon");
       //Act
-      int result = testWordCounter.CheckMatch("love","I love Oregon");
+      int result = testWordCounter.CheckMatch();
       //Assert
       Assert.AreEqual(1,result);
     }
