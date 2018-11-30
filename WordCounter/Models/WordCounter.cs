@@ -34,19 +34,17 @@ namespace WordCounter.Models
       return this._sentence.ToLower();
     }
 
-    public int CheckMatch(string word, string sentence)
+    public int CheckMatch()
     {
-      string[] splitArray = sentence.Split(' ');
+      string targetWord = WordConvertToLower();
+      string sentence = SentenceConvertToLower();
+      string[] sentenceSplitIntoWords = sentence.Split(' ');
       int count = 0;
-      foreach ( string x in splitArray)
+      foreach (string currentWord in sentenceSplitIntoWords)
       {
-        if(x.Contains(word))
+        if(targetWord==currentWord)
         {
-          count = count + 1;
-        }
-        else
-        {
-          count = count + 0;
+          count++;
         }
       }
       return count;

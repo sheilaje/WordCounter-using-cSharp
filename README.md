@@ -34,6 +34,20 @@ _Write a program that gathers both a word and sentence from a user, then checks 
 
 5. Compare each word in the split array with user provided word to check the number of times it occurs. If same, increment a counter.
 
+6. Create 2 controllers
+  * _HomeController_
+  * _WordCounterController_
+
+7. Home Controller has the route with the URL for the ROOT page and action method(Index()) that has to the view of that particular method.
+      * _Route _ [HttpGet("/")]_
+      when we first run the application this route will be the landing page.
+
+8. WordCounterController has 2 action methods
+      * _To offer a form to the user to enter the word and the sentence_
+              * _It's corresponding Route to its view page with the form [HttpGet("/wordCounter/New")]_
+      * _It checks the input ,does the process and displays the output in the page_
+              * _[HttpPost("/wordcounter/checkmatch")]_
+
 ## Setup/Installation Requirements
 
 * _.NET CORE_
