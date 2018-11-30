@@ -6,6 +6,10 @@ namespace WordCounter.Controllers
 {
   public class WordCounterController : Controller
   {
-
+    [HttpGet("/word-counter/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
   }
 }
