@@ -4,13 +4,13 @@ using System;
 namespace WordCounter.Models
 {
   [TestClass]
-  public class WordCounterTest
+  public class WordTest
   {
     [TestMethod]
     public void WordCounterConstructor_CreatesInstanceOfWordCounter_Type()
     {
-      WordCounter testWordCounter = new WordCounter("word","sentence");
-      Assert.AreEqual(typeof(WordCounter), testWordCounter.GetType());
+      Word testWordCounter = new Word("word","sentence");
+      Assert.AreEqual(typeof(Word), testWordCounter.GetType());
     }
 
     [TestMethod]
@@ -18,7 +18,7 @@ namespace WordCounter.Models
     {
       //Arrange
       string testWord = "Word";
-      WordCounter testWordCounter =new WordCounter("Word","Sentence");
+      Word testWordCounter =new Word("Word","Sentence");
       //Act
       string result = testWordCounter.GetWord();
       //Assert
@@ -30,7 +30,7 @@ namespace WordCounter.Models
     {
       //Arrange
       string testSentence = "Sentence";
-      WordCounter testWordCounter =new WordCounter("Word","Sentence");
+      Word testWordCounter =new Word("Word","Sentence");
       //Act
       string result = testWordCounter.GetSentence();
       //Assert
@@ -42,7 +42,7 @@ namespace WordCounter.Models
     {
       //Arrange
       string testWord = "I";
-      WordCounter testWordCounter = new WordCounter(testWord,"Sentence");
+      Word testWordCounter = new Word(testWord,"Sentence");
       //Act
       string result = testWordCounter.WordConvertToLower();
       //Assert
@@ -54,7 +54,7 @@ namespace WordCounter.Models
     {
       //Arrange
       string testSentence = "I Love OREGON";
-      WordCounter testWordCounter = new WordCounter("Word",testSentence);
+      Word testWordCounter = new Word("Word",testSentence);
       //Act
       string result = testWordCounter.SentenceConvertToLower();
       //Assert
@@ -65,7 +65,7 @@ namespace WordCounter.Models
     public void CheckMatch_CheckForSingleLetterMatch_Count()
     {
       //Arrange
-      WordCounter testWordCounter = new WordCounter("a","a");
+      Word testWordCounter = new Word("a","a");
       //Act
       int result = testWordCounter.CheckMatch();
       //Assert
@@ -76,7 +76,7 @@ namespace WordCounter.Models
     public void CheckMatch_CheckForSingleLetterMultipleMatch_Count()
     {
       //Arrange
-      WordCounter testWordCounter = new WordCounter("a","a b a c g");
+      Word testWordCounter = new Word("a","a b a c g");
       //Act
       int result = testWordCounter.CheckMatch();
       //Assert
@@ -87,7 +87,7 @@ namespace WordCounter.Models
     public void CheckMatch_CheckForWordsMatch_Count()
     {
       //Arrange
-      WordCounter testWordCounter = new WordCounter("love","I love Oregon");
+      Word testWordCounter = new Word("love","I love Oregon");
       //Act
       int result = testWordCounter.CheckMatch();
       //Assert

@@ -21,5 +21,18 @@ namespace WordCounter.Tests
       //Assert
       Assert.IsInstanceOfType(newView, typeof(ViewResult));
     }
+
+    [TestMethod]
+    public void Show_ReturnsCorrectView_True()
+    {
+      //Arrange
+      WordCounterController controller = new WordCounterController();
+      //Act
+      string word = "love";
+      string sentence = "I loVe OreGON and I Love cAliFORnia";
+      ActionResult showView = controller.Show(word, sentence);
+      //Assert
+      Assert.IsInstanceOfType(showView, typeof(ViewResult));
+    }
   }
 }
