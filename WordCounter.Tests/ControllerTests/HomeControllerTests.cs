@@ -8,7 +8,7 @@ using System;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class WordCounterControllerTest
+  public class HomeControllerTest
   {
 
     [TestMethod]
@@ -17,7 +17,7 @@ namespace WordCounter.Tests
       //Arrange
       HomeController controller = new HomeController();
       //Act
-      ActionResult indexView = controller.Index();
+      ViewResult indexView = controller.Index() as ViewResult;
       //Assert
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
