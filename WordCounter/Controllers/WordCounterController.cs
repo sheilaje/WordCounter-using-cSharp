@@ -16,7 +16,7 @@ namespace WordCounter.Controllers
   [HttpPost("/check-match")]
     public ActionResult Show(string word, string sentence)
     {
-      WordCounter newWordCounter = new WordCounter(word, sentence);
+      Word newWordCounter = new Word(word, sentence);
       return View(newWordCounter);
     }
   }

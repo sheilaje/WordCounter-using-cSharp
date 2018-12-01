@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace WordCounter.Models
 {
-  public class WordCounter
+  public class Word
   {
     private string _word;
     private string _sentence;
 
-    public WordCounter(string word, string sentence)
+    public Word(string word, string sentence)
     {
       _word = word;
       _sentence = sentence;
