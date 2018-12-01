@@ -17,7 +17,7 @@ namespace WordCounter.Tests
       //Arrange
       HomeController controller = new HomeController();
       //Act
-      ViewResult indexView = controller.Index() as ViewResult;
+      ActionResult indexView = controller.Index();
       //Assert
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }

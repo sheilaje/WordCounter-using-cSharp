@@ -34,5 +34,20 @@ namespace WordCounter.Tests
       //Assert
       Assert.IsInstanceOfType(showView, typeof(ViewResult));
     }
+
+    // [TestMethod]
+    // public void Show_HasCorrectModelType_True()
+    // {
+    //   //Arrange
+    //   WordCounterController controller = new WordCounterController();
+    //
+    //   string word = "love";
+    //   string sentence = "I loVe OreGON and I Love cAliFORnia";
+    //   ViewResult showView = controller.Show(word, sentence) as ViewResult;
+    //   //Act
+    //   var result = showView.ViewData.Model;
+    //   //Assert
+    //   Assert.IsInstanceOfType(result, typeof(word));
+    // }
   }
 }
