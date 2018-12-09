@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{0D96B9A2-0F98-4DFB-B527-9536E0022162}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ControllerTests/HomeControllerTests.cs">
+    <Files>
+      <File FileName="WordTest.cs" Line="8" Column="13" />
+      <File FileName="ControllerTests/HomeControllerTests.cs" Line="2" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WordCounter.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

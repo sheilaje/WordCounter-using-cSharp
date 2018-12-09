@@ -12,4 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WordCounter\WordCounter.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="EmptyClass.cs" />
+  </ItemGroup>
 </Project>

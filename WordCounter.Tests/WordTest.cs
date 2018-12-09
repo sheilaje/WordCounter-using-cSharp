@@ -1,10 +1,11 @@
 ﻿using System;
 namespace WordCounter.Tests
 {
-    public class EmptyClass
+    public class WordTest   
     {
-        public EmptyClass()
+        public WordTest()
         {
+
         }
     }
 }
