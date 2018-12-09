@@ -2,13 +2,21 @@
   Layout = "_Layout";
 }
 
-    <h1>Lets Start the Game</h1>
+    <center><h1>Lets Start the Game</h1></center>
 
+    <div class = "container">
     <form action="/check-match" method="post">
+    <div class = "form-group">
       <label for="sentence">Input sentence:</label>
-      <input id="sentence" name="sentence" type="text">
-      <label for="word">search word:</label>
-      <input id="word" name="word" type="text">
+      <input id="sentence" name="sentence" class = "form-control" type="text"><br>
+    </div>
+    <div class = "form-group">
+      <label  for="word">search word:</label>
+      <input id="word" class = "form-control" name="word" type="text"><br>
+    </div>
 
-      <button type="submit">Search</button>
+      <center><button type="submit" class = "btn btn-success">Search</button>
+      </center>
+
     </form>
+    </div>

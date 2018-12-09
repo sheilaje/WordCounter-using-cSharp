@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{E555258F-734F-4EF4-AD3A-09F781D489B3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyHTMLFile.html">
+    <Files>
+      <File FileName="EmptyHTMLFile.html" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WordCounter PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
